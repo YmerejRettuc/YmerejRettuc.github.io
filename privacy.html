@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger Privacy Policy</title>
+<style>
+  :root { --paper: #EEF2E6; --ink: #1C2433; --pencil: #5F6858; --rule: #C0574E; }
+  @media (prefers-color-scheme: dark) { :root { --paper: #1B231E; --ink: #E6E2D3; --pencil: #9AA394; --rule: #7A3B35; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 18px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 38rem; padding: 48px 16px 48px 24px; margin: 0 auto; border-left: 3px double var(--rule); }
+  h1 { font-weight: normal; font-size: 2.2rem; margin: 0 0 8px; }
+  h2 { font-weight: normal; font-style: italic; font-size: 1.35rem; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-left: 1.2rem; }
+  .small { color: var(--pencil); font-size: 0.9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="small">Ledger, a personal expense tracker for Android. Last updated 23 October 2026.</p>
+
+  <h2>What Ledger reads</h2>
+  <ul>
+    <li><strong>Notifications</strong> from bank and wallet apps that the user has chosen in the app's settings. Notifications from any other app are ignored.</li>
+    <li><strong>Gmail</strong>, only if the user connects it, with Google's read-only Gmail scope (<code>gmail.readonly</code>). Ledger only searches for emails from bank alert senders that the user has listed in the app's settings, and only reads those emails.</li>
+  </ul>
+
+  <h2>What Ledger keeps</h2>
+  <p>From each purchase alert, Ledger keeps the parsed details: amount, currency, merchant, date and time, and card name. It does not keep whole emails or card numbers. When an alert can't be read, a short sample (up to 300 characters, with card numbers masked) is kept so the user can write a rule for it.</p>
+  <p>Ledger does not store Google passwords or Google access tokens. Google Play services provides a short-lived access token for each sync.</p>
+
+  <h2>Where the data goes</h2>
+  <p>Everything stays on the phone, in the app's private storage. Ledger has no server and no analytics, and it does not share, sell or transfer data to anyone. Data leaves the phone only when the user exports it themselves, for example by sharing a CSV file.</p>
+
+  <h2>Google user data</h2>
+  <p>Ledger's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to record the user's own purchases in the app on their own phone.</p>
+
+  <h2>Removing access and data</h2>
+  <ul>
+    <li>In the app, Settings → Gmail → Disconnect Gmail stops email sync.</li>
+    <li>Google access can be removed completely at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Settings → Delete all data erases every entry, trip and log on the phone. Uninstalling the app also deletes all of its data.</li>
+  </ul>
+
+  <p><a href="index.html">Back to Ledger</a></p>
+</main>
+</body>
+</html>
